@@ -1,0 +1,315 @@
+<PsychoPy2experiment version="1.78.01" encoding="utf-8">
+  <Settings>
+    <Param name="Show mouse" val="False" valType="bool" updates="None"/>
+    <Param name="Save csv file" val="False" valType="bool" updates="None"/>
+    <Param name="Monitor" val="testMonitor" valType="str" updates="None"/>
+    <Param name="Enable Escape" val="True" valType="bool" updates="None"/>
+    <Param name="color" val="$[0,0,0]" valType="str" updates="None"/>
+    <Param name="Window size (pixels)" val="[1024, 768]" valType="code" updates="None"/>
+    <Param name="Full-screen window" val="True" valType="bool" updates="None"/>
+    <Param name="colorSpace" val="rgb" valType="str" updates="None"/>
+    <Param name="Save log file" val="True" valType="bool" updates="None"/>
+    <Param name="Experiment info" val="{'participant':'', 'session':'001'}" valType="code" updates="None"/>
+    <Param name="Save excel file" val="False" valType="bool" updates="None"/>
+    <Param name="Save wide csv file" val="True" valType="bool" updates="None"/>
+    <Param name="Save psydat file" val="True" valType="bool" updates="None"/>
+    <Param name="expName" val="moral_dilemma" valType="str" updates="None"/>
+    <Param name="logging level" val="exp" valType="code" updates="None"/>
+    <Param name="Units" val="use prefs" valType="str" updates="None"/>
+    <Param name="Show info dlg" val="True" valType="bool" updates="None"/>
+    <Param name="Saved data folder" val="" valType="code" updates="None"/>
+    <Param name="Screen" val="1" valType="num" updates="None"/>
+  </Settings>
+  <Routines>
+    <Routine name="control">
+      <ImageComponent name="ctrl_image">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="flipVert" val="False" valType="bool" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="ctrl_image" valType="code" updates="constant"/>
+        <Param name="color" val="$[1,1,1]" valType="str" updates="constant"/>
+        <Param name="stopVal" val="5" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="mask" val="None" valType="str" updates="constant"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="interpolate" val="linear" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="texture resolution" val="128" valType="code" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="flipHoriz" val="False" valType="bool" updates="constant"/>
+        <Param name="image" val="$control_image" valType="str" updates="set every repeat"/>
+        <Param name="advancedParams"/>
+        <Param name="size" val="[1, 1.3]" valType="code" updates="constant"/>
+      </ImageComponent>
+      <SoundComponent name="sound_1">
+        <Param name="sound" val="$control_sound" valType="str" updates="set every repeat"/>
+        <Param name="volume" val="1" valType="code" updates="constant"/>
+        <Param name="name" val="sound_1" valType="code" updates="None"/>
+        <Param name="stopVal" val="5" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+      </SoundComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_3" valType="code" updates="None"/>
+        <Param name="stopVal" val="5" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'y','n'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="trial">
+      <TextComponent name="instruct">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="instruct" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="This are the instructions" valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_2" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'space'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="dilemma">
+      <ImageComponent name="dil_image">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="flipVert" val="False" valType="bool" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="dil_image" valType="code" updates="constant"/>
+        <Param name="color" val="$[1,1,1]" valType="str" updates="constant"/>
+        <Param name="stopVal" val="5" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="mask" val="None" valType="str" updates="constant"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="interpolate" val="linear" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="texture resolution" val="128" valType="code" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="flipHoriz" val="False" valType="bool" updates="constant"/>
+        <Param name="image" val="$dilemma_image" valType="str" updates="set every repeat"/>
+        <Param name="advancedParams"/>
+        <Param name="size" val="[1,1.3]" valType="code" updates="constant"/>
+      </ImageComponent>
+      <SoundComponent name="sound_2">
+        <Param name="sound" val="$dilemma_sound" valType="str" updates="set every repeat"/>
+        <Param name="volume" val="1" valType="code" updates="constant"/>
+        <Param name="name" val="sound_2" valType="code" updates="None"/>
+        <Param name="stopVal" val="5" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+      </SoundComponent>
+      <KeyboardComponent name="key_resp_4">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_4" valType="code" updates="None"/>
+        <Param name="stopVal" val="5" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'y','n'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="thanks">
+      <TextComponent name="text">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="text" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="Thanks!" valType="str" updates="constant"/>
+        <Param name="stopVal" val="5" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="instructions">
+      <TextComponent name="text_instruct">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="text_instruct" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="Please respond:&#13;&#10;&#13;&#10;'YES' with your index finger &#13;&#10;&#13;&#10;or&#13;&#10;&#13;&#10;'NO' with your middle finger &#13;&#10;&#13;&#10;for each vignette." valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_5">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_5" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'y','n','left','right','space'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="conditionsFile" val="moral_dilemma_targets_1.csv" valType="str" updates="None"/>
+      <Param name="name" val="trials_2" valType="code" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="random" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'dilemma_image': u'./dilemma_vignettes/d1.JPG', 'control_sound': u'./audio_prompts/control25.wav', 'control_image': u'./control_vignettes/c1.JPG', 'dilemma_sound': u'./audio_prompts/dilema1.wav'}, {'dilemma_image': u'./dilemma_vignettes/d2.JPG', 'control_sound': u'./audio_prompts/control26.wav', 'control_image': u'./control_vignettes/c2.JPG', 'dilemma_sound': u'./audio_prompts/dilema2.wav'}, {'dilemma_image': u'./dilemma_vignettes/d3.JPG', 'control_sound': u'./audio_prompts/control27.wav', 'control_image': u'./control_vignettes/c3.JPG', 'dilemma_sound': u'./audio_prompts/dilema3.wav'}, {'dilemma_image': u'./dilemma_vignettes/d4.JPG', 'control_sound': u'./audio_prompts/control28.wav', 'control_image': u'./control_vignettes/c4.JPG', 'dilemma_sound': u'./audio_prompts/dilema4.wav'}, {'dilemma_image': u'./dilemma_vignettes/d5.JPG', 'control_sound': u'./audio_prompts/control29.wav', 'control_image': u'./control_vignettes/c5.JPG', 'dilemma_sound': u'./audio_prompts/dilema5.wav'}, {'dilemma_image': u'./dilemma_vignettes/d6.JPG', 'control_sound': u'./audio_prompts/control30.wav', 'control_image': u'./control_vignettes/c6.jpg', 'dilemma_sound': u'./audio_prompts/dilema6.wav'}]" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="control"/>
+    <LoopTerminator name="trials_2"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_3">
+      <Param name="conditionsFile" val="moral_dilemma_targets_1.csv" valType="str" updates="None"/>
+      <Param name="name" val="trials_3" valType="code" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="random" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'dilemma_image': u'./dilemma_vignettes/d1.JPG', 'control_sound': u'./audio_prompts/control25.wav', 'control_image': u'./control_vignettes/c1.JPG', 'dilemma_sound': u'./audio_prompts/dilema1.wav'}, {'dilemma_image': u'./dilemma_vignettes/d2.JPG', 'control_sound': u'./audio_prompts/control26.wav', 'control_image': u'./control_vignettes/c2.JPG', 'dilemma_sound': u'./audio_prompts/dilema2.wav'}, {'dilemma_image': u'./dilemma_vignettes/d3.JPG', 'control_sound': u'./audio_prompts/control27.wav', 'control_image': u'./control_vignettes/c3.JPG', 'dilemma_sound': u'./audio_prompts/dilema3.wav'}, {'dilemma_image': u'./dilemma_vignettes/d4.JPG', 'control_sound': u'./audio_prompts/control28.wav', 'control_image': u'./control_vignettes/c4.JPG', 'dilemma_sound': u'./audio_prompts/dilema4.wav'}, {'dilemma_image': u'./dilemma_vignettes/d5.JPG', 'control_sound': u'./audio_prompts/control29.wav', 'control_image': u'./control_vignettes/c5.JPG', 'dilemma_sound': u'./audio_prompts/dilema5.wav'}, {'dilemma_image': u'./dilemma_vignettes/d6.JPG', 'control_sound': u'./audio_prompts/control30.wav', 'control_image': u'./control_vignettes/c6.jpg', 'dilemma_sound': u'./audio_prompts/dilema6.wav'}]" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="dilemma"/>
+    <LoopTerminator name="trials_3"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="conditionsFile" val="moral_dilemma_targets_2.csv" valType="str" updates="None"/>
+      <Param name="name" val="trials" valType="code" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="random" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'dilemma_image': u'./dilemma_vignettes/d7.JPG', 'control_sound': u'./audio_prompts/control31.wav', 'control_image': u'./control_vignettes/c7.JPG', 'dilemma_sound': u'./audio_prompts/dilema7.wav'}, {'dilemma_image': u'./dilemma_vignettes/d8.JPG', 'control_sound': u'./audio_prompts/control32.wav', 'control_image': u'./control_vignettes/c8.JPG', 'dilemma_sound': u'./audio_prompts/dilema8.wav'}, {'dilemma_image': u'./dilemma_vignettes/d9.JPG', 'control_sound': u'./audio_prompts/control33.wav', 'control_image': u'./control_vignettes/c9.JPG', 'dilemma_sound': u'./audio_prompts/dilema9.wav'}, {'dilemma_image': u'./dilemma_vignettes/d10.JPG', 'control_sound': u'./audio_prompts/control34.wav', 'control_image': u'./control_vignettes/c10.JPG', 'dilemma_sound': u'./audio_prompts/dilema10.wav'}, {'dilemma_image': u'./dilemma_vignettes/d11.JPG', 'control_sound': u'./audio_prompts/control35.wav', 'control_image': u'./control_vignettes/c11.JPG', 'dilemma_sound': u'./audio_prompts/dilema11.wav'}, {'dilemma_image': u'./dilemma_vignettes/d12.JPG', 'control_sound': u'./audio_prompts/control36.wav', 'control_image': u'./control_vignettes/c12.jpg', 'dilemma_sound': u'./audio_prompts/dilema12.wav'}]" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="control"/>
+    <LoopTerminator name="trials"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_4">
+      <Param name="conditionsFile" val="moral_dilemma_targets_2.csv" valType="str" updates="None"/>
+      <Param name="name" val="trials_4" valType="code" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="random" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'dilemma_image': u'./dilemma_vignettes/d7.JPG', 'control_sound': u'./audio_prompts/control31.wav', 'control_image': u'./control_vignettes/c7.JPG', 'dilemma_sound': u'./audio_prompts/dilema7.wav'}, {'dilemma_image': u'./dilemma_vignettes/d8.JPG', 'control_sound': u'./audio_prompts/control32.wav', 'control_image': u'./control_vignettes/c8.JPG', 'dilemma_sound': u'./audio_prompts/dilema8.wav'}, {'dilemma_image': u'./dilemma_vignettes/d9.JPG', 'control_sound': u'./audio_prompts/control33.wav', 'control_image': u'./control_vignettes/c9.JPG', 'dilemma_sound': u'./audio_prompts/dilema9.wav'}, {'dilemma_image': u'./dilemma_vignettes/d10.JPG', 'control_sound': u'./audio_prompts/control34.wav', 'control_image': u'./control_vignettes/c10.JPG', 'dilemma_sound': u'./audio_prompts/dilema10.wav'}, {'dilemma_image': u'./dilemma_vignettes/d11.JPG', 'control_sound': u'./audio_prompts/control35.wav', 'control_image': u'./control_vignettes/c11.JPG', 'dilemma_sound': u'./audio_prompts/dilema11.wav'}, {'dilemma_image': u'./dilemma_vignettes/d12.JPG', 'control_sound': u'./audio_prompts/control36.wav', 'control_image': u'./control_vignettes/c12.jpg', 'dilemma_sound': u'./audio_prompts/dilema12.wav'}]" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="dilemma"/>
+    <LoopTerminator name="trials_4"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_5">
+      <Param name="conditionsFile" val="moral_dilemma_targets_3.csv" valType="str" updates="None"/>
+      <Param name="name" val="trials_5" valType="code" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="random" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'dilemma_image': u'./dilemma_vignettes/d13.JPG', 'control_sound': u'./audio_prompts/control37.wav', 'control_image': u'./control_vignettes/c13.JPG', 'dilemma_sound': u'./audio_prompts/dilema13.wav'}, {'dilemma_image': u'./dilemma_vignettes/d14.JPG', 'control_sound': u'./audio_prompts/control38.wav', 'control_image': u'./control_vignettes/c14.JPG', 'dilemma_sound': u'./audio_prompts/dilema14.wav'}, {'dilemma_image': u'./dilemma_vignettes/d15.JPG', 'control_sound': u'./audio_prompts/control39.wav', 'control_image': u'./control_vignettes/c15.JPG', 'dilemma_sound': u'./audio_prompts/dilema15.wav'}, {'dilemma_image': u'./dilemma_vignettes/d16.JPG', 'control_sound': u'./audio_prompts/control40.wav', 'control_image': u'./control_vignettes/c16.JPG', 'dilemma_sound': u'./audio_prompts/dilema16.wav'}, {'dilemma_image': u'./dilemma_vignettes/d17.JPG', 'control_sound': u'./audio_prompts/control41.wav', 'control_image': u'./control_vignettes/c17.JPG', 'dilemma_sound': u'./audio_prompts/dilema17.wav'}, {'dilemma_image': u'./dilemma_vignettes/d18.JPG', 'control_sound': u'./audio_prompts/control42.wav', 'control_image': u'./control_vignettes/c18.JPG', 'dilemma_sound': u'./audio_prompts/dilema18.wav'}]" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="control"/>
+    <LoopTerminator name="trials_5"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_6">
+      <Param name="conditionsFile" val="moral_dilemma_targets_3.csv" valType="str" updates="None"/>
+      <Param name="name" val="trials_6" valType="code" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="random" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'dilemma_image': u'./dilemma_vignettes/d13.JPG', 'control_sound': u'./audio_prompts/control37.wav', 'control_image': u'./control_vignettes/c13.JPG', 'dilemma_sound': u'./audio_prompts/dilema13.wav'}, {'dilemma_image': u'./dilemma_vignettes/d14.JPG', 'control_sound': u'./audio_prompts/control38.wav', 'control_image': u'./control_vignettes/c14.JPG', 'dilemma_sound': u'./audio_prompts/dilema14.wav'}, {'dilemma_image': u'./dilemma_vignettes/d15.JPG', 'control_sound': u'./audio_prompts/control39.wav', 'control_image': u'./control_vignettes/c15.JPG', 'dilemma_sound': u'./audio_prompts/dilema15.wav'}, {'dilemma_image': u'./dilemma_vignettes/d16.JPG', 'control_sound': u'./audio_prompts/control40.wav', 'control_image': u'./control_vignettes/c16.JPG', 'dilemma_sound': u'./audio_prompts/dilema16.wav'}, {'dilemma_image': u'./dilemma_vignettes/d17.JPG', 'control_sound': u'./audio_prompts/control41.wav', 'control_image': u'./control_vignettes/c17.JPG', 'dilemma_sound': u'./audio_prompts/dilema17.wav'}, {'dilemma_image': u'./dilemma_vignettes/d18.JPG', 'control_sound': u'./audio_prompts/control42.wav', 'control_image': u'./control_vignettes/c18.JPG', 'dilemma_sound': u'./audio_prompts/dilema18.wav'}]" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="dilemma"/>
+    <LoopTerminator name="trials_6"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_7">
+      <Param name="conditionsFile" val="moral_dilemma_targets_4.csv" valType="str" updates="None"/>
+      <Param name="name" val="trials_7" valType="code" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="random" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'dilemma_image': u'./dilemma_vignettes/d19.JPG', 'control_sound': u'./audio_prompts/control43.wav', 'control_image': u'./control_vignettes/c19.jpg', 'dilemma_sound': u'./audio_prompts/dilema19.wav'}, {'dilemma_image': u'./dilemma_vignettes/d20.JPG', 'control_sound': u'./audio_prompts/control44.wav', 'control_image': u'./control_vignettes/c20.JPG', 'dilemma_sound': u'./audio_prompts/dilema20.wav'}, {'dilemma_image': u'./dilemma_vignettes/d21.JPG', 'control_sound': u'./audio_prompts/control45.wav', 'control_image': u'./control_vignettes/c21.JPG', 'dilemma_sound': u'./audio_prompts/dilema21.wav'}, {'dilemma_image': u'./dilemma_vignettes/d22.JPG', 'control_sound': u'./audio_prompts/control46.wav', 'control_image': u'./control_vignettes/c22.JPG', 'dilemma_sound': u'./audio_prompts/dilema22.wav'}, {'dilemma_image': u'./dilemma_vignettes/d23.JPG', 'control_sound': u'./audio_prompts/control47.wav', 'control_image': u'./control_vignettes/c23.JPG', 'dilemma_sound': u'./audio_prompts/dilema23.wav'}, {'dilemma_image': u'./dilemma_vignettes/d24.JPG', 'control_sound': u'./audio_prompts/control48.wav', 'control_image': u'./control_vignettes/c24.JPG', 'dilemma_sound': u'./audio_prompts/dilema24.wav'}]" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="control"/>
+    <LoopTerminator name="trials_7"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_8">
+      <Param name="conditionsFile" val="moral_dilemma_targets_4.csv" valType="str" updates="None"/>
+      <Param name="name" val="trials_8" valType="code" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="random" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'dilemma_image': u'./dilemma_vignettes/d19.JPG', 'control_sound': u'./audio_prompts/control43.wav', 'control_image': u'./control_vignettes/c19.jpg', 'dilemma_sound': u'./audio_prompts/dilema19.wav'}, {'dilemma_image': u'./dilemma_vignettes/d20.JPG', 'control_sound': u'./audio_prompts/control44.wav', 'control_image': u'./control_vignettes/c20.JPG', 'dilemma_sound': u'./audio_prompts/dilema20.wav'}, {'dilemma_image': u'./dilemma_vignettes/d21.JPG', 'control_sound': u'./audio_prompts/control45.wav', 'control_image': u'./control_vignettes/c21.JPG', 'dilemma_sound': u'./audio_prompts/dilema21.wav'}, {'dilemma_image': u'./dilemma_vignettes/d22.JPG', 'control_sound': u'./audio_prompts/control46.wav', 'control_image': u'./control_vignettes/c22.JPG', 'dilemma_sound': u'./audio_prompts/dilema22.wav'}, {'dilemma_image': u'./dilemma_vignettes/d23.JPG', 'control_sound': u'./audio_prompts/control47.wav', 'control_image': u'./control_vignettes/c23.JPG', 'dilemma_sound': u'./audio_prompts/dilema23.wav'}, {'dilemma_image': u'./dilemma_vignettes/d24.JPG', 'control_sound': u'./audio_prompts/control48.wav', 'control_image': u'./control_vignettes/c24.JPG', 'dilemma_sound': u'./audio_prompts/dilema24.wav'}]" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="dilemma"/>
+    <LoopTerminator name="trials_8"/>
+    <Routine name="thanks"/>
+  </Flow>
+</PsychoPy2experiment>
