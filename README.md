@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/9342/OpenCogLabRepository/moral-dilemma.svg)](https://zenodo.org/badge/latestdoi/9342/OpenCogLabRepository/moral-dilemma)
+
+
 # Moral Dilemma Task
 
 This is a [PsychoPy](http://www.psychopy.org/) implementation of the Moral Dilemma task described in [Harrison et al. 2008](http://www.pnas.org/content/105/28/9781.long#sec-13) and in particular in the [Supporting Information Materials and Methods](http://www.pnas.org/content/suppl/2008/07/18/0711791105.DCSupplemental/0711791105SI.pdf#nameddest=STXT) and [Supporting Information Appendix](http://www.pnas.org/content/suppl/2008/07/18/0711791105.DCSupplemental/Appendix_PDF.pdf).
