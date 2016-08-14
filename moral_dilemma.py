@@ -16,7 +16,7 @@ from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
 import sys
 
-LUMINA = 1
+LUMINA = 0
 LUMINA_TRIGGER = 4
 
 ## initialize communication with the lumina
