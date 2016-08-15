@@ -39,7 +39,7 @@ who has to push the chair. If he does not
 do it, not only will his son die but also five
 more people held in the concentration
 camp." Question during task:* ***Would you push the
-chair?***
+chair?*** *Vignettes are copied from [(Harrison et al. 2008) Support Information Appendix](http://www.pnas.org/content/suppl/2008/07/18/0711791105.DCSupplemental/Appendix_PDF.pdf).*
 
 The experiment (```moral_dilemma.py```) consists of 24 moral dilemma questions and 24 control questions presented in eight 30-second blocks, each consisting of six questions, that alternated between control (C) and moral dilemma (D) conditions (CDCDCDCD). During each stimuli, participants view an image and hear a question corresponding to each vignette. Each image is displayed for 5 seconds and the audio begins one second after image onset. Participants respond to the proposed question by pressing one of two buttons on a response box (index finger button for “yes”, middle finger button for “no”). The task begins and ends with 20 second fixation blocks during which participants passively view a plus (+) sign centered on a grey background.
 
